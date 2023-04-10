@@ -18,6 +18,16 @@
             });
         });
 
+        //判断是主页还是文章页面
+        function isMainPage(){
+            if($('#post_detail').length>0){
+                //文章页面
+                console.log("post");
+            }else {
+                console.log('Main');
+            }
+        }
+
     
     });
 </script>
