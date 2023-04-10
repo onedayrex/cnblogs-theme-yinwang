@@ -22,12 +22,16 @@
         function isMainPage(){
             if($('#post_detail').length>0){
                 //文章页面
-                console.log("post");
-            }else {
-                console.log('Main');
+                return false
             }
+            return true
         }
 
+        //判断主页给forFlow写样式
+        if(isMainPage()){
+            console.log('success')
+            $('.forFlow').css({"margin":"5% 10% 2% 10%"})
+        }
     
     });
 </script>
