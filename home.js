@@ -16,7 +16,7 @@
             return $('<h2/>',{
                 html: this.innerHTML
             });
-        });
+        })
 
         //判断是主页还是文章页面
         function isMainPage(){
@@ -27,11 +27,16 @@
             return true
         }
 
-        //判断主页给forFlow写样式
         if(isMainPage()){
-            console.log('success')
+            //判断主页给forFlow写样式
             $('.forFlow').css({"margin":"5% 10% 2% 10%"})
+
+            //主页给div添加点击事件
+            $('.day').click(function(){
+                var post_link = $(this).find('a').attr('href')
+                window.location.href=post_link
+            });
         }
-    
+
     });
 </script>

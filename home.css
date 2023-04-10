@@ -44,6 +44,11 @@
 }
 
 /*屏蔽结束*/
+.day:hover{
+   background-color: #eee;
+   font-size: 100%;
+}
+
 
 .day{
   position: relative;
@@ -52,6 +57,8 @@
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 15px 20px;
 }
 
 .day:last-child {
