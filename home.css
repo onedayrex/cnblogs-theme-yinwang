@@ -6,9 +6,37 @@
   display: none;
 }
 
-/*屏蔽评论*/
-#comment_form {
-  display: none;
+/*屏蔽文章页面底部广告等*/
+
+/* 屏蔽发表评论字样 */
+div#commentform_title {
+    display: none;
+}
+
+/* 屏蔽底部刷新等 */
+div#comment_nav {
+    display: none;
+}
+
+/* 屏蔽广告 */
+div#ad_text_under_commentbox {
+    display: none;
+}
+
+div#cnblogs_ch {
+    display: none;
+}
+
+div#cnblogs_c1 {
+    display: none;
+}
+
+div#under_post_card1 {
+    display: none;
+}
+
+div#under_post_card2 {
+    display: none;
 }
 
 #blog_post_info {
@@ -43,12 +71,55 @@
   display: none;
 }
 
+.login_tips{
+    display: none;
+}
+
+.feedback_area_title {
+    display: none;
+}
+
 /*屏蔽结束*/
 .day:hover{
    background-color: #eee;
    font-size: 100%;
 }
 
+/* 评论工具居中展示 */
+.comment_textarea {
+    margin-bottom: 0px;
+    margin: auto;
+}
+
+/* 评论样式 */
+div#blog-comments-placeholder {
+    padding: 10%;
+}
+
+/* 评论列表设置 */
+div#blog-comments-placeholder {
+    padding: 10%;
+}
+
+/* 评论按钮设置 */
+.comment_btn {
+    height: 39px !important;
+    width: 90px !important;
+    margin-left: 58%;
+}
+/* 单条评论框设置 */
+.feedbackItem {
+    background-color: #fff;
+    margin: 0;
+    overflow: hidden;
+    padding: 25px;
+    margin-top: 2em;
+    padding-left: 100px;
+    position: relative;
+    border: 1px solid #e8e8e8;
+    border-bottom: 1px solid #dadada;
+    border-radius: 39px;
+}
 
 .day{
   position: relative;
